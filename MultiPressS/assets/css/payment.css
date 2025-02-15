@@ -1,0 +1,133 @@
+/* Checkout Sayfası */
+.checkout-container {
+    background-color: #f8f9fa;
+    min-height: calc(100vh - 72px);
+}
+
+.package-details {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.package-details ul li {
+    margin-bottom: 0.5rem;
+}
+
+.price-details {
+    font-size: 1.1rem;
+}
+
+.payment-methods {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.agreements {
+    font-size: 0.9rem;
+}
+
+/* Başarılı Ödeme Sayfası */
+.payment-success-container {
+    background-color: #f8f9fa;
+    min-height: calc(100vh - 72px);
+}
+
+.success-icon {
+    color: #28a745;
+}
+
+.payment-details {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+/* İptal Sayfası */
+.payment-cancel-container {
+    background-color: #f8f9fa;
+    min-height: calc(100vh - 72px);
+}
+
+.cancel-icon {
+    color: #dc3545;
+}
+
+.support-info {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .checkout-container {
+        padding: 1rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .package-details, 
+    .payment-methods, 
+    .payment-details {
+        padding: 1rem;
+    }
+}
+
+/* PayTR iframe */
+.payment-iframe-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: #fff;
+}
+
+/* Form Elemanları */
+.form-control {
+    height: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
+}
+
+textarea.form-control {
+    height: auto;
+    min-height: 100px;
+}
+
+/* Butonlar */
+.btn-lg {
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+/* Animasyonlar */
+.success-icon,
+.cancel-icon {
+    animation: scaleIn 0.5s ease-in-out;
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

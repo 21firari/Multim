@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /multipress-hub/
+
+# Dosya veya dizin değilse
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Tüm istekleri index.php'ye yönlendir
+RewriteRule ^(.*)$ index.php [QSA,L]
